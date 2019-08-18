@@ -8,10 +8,10 @@ const init = () => {
   });
 };
 
-const createUser = ({ email, password }) => {
+const createUser = ({ name, email, password }) => {
   return firebase
     .auth()
-    .createUserWithEmailAndPassword(email, password)
+    .createUserWithEmailAndPassword(name, email, password)
     .catch(function(error) {
       // Handle Errors here.
       const errorCode = error.code;

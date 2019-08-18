@@ -6,6 +6,9 @@ const cors = require("cors");
 const config = require("./config");
 const firebase = require("./utils/firebase");
 
+// Routes
+const routeV1 = require('./routes/v1')
+
 firebase.init();
 const app = express();
 
@@ -36,4 +39,6 @@ app.use((req, res, next) => {
 
 app.listen(config.port, () => {
   console.log("Server listening on port %s, Ctrl+C to stop", config.port);
+
+  app.use('/v1', routeV1);
 });
