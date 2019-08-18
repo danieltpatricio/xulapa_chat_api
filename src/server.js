@@ -14,6 +14,7 @@ const app = express();
 
 app.use(express.static("public"));
 app.use(cors());
+app.use(bodyParser({ extended: true }))
 
 app.get("/", (req, res) => {
   const help = `
