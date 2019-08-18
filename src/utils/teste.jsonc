@@ -1,0 +1,21 @@
+{
+  "users": {
+    "<userID>": {
+      "role": "0 || 1",
+      "name": "Daniel",
+      "phone": "",
+      "ip": "",
+      "email": "",
+      "age": "",
+      "service": "",
+      "register_time": ""
+    }
+  },
+  "fila": [
+    {
+      "cliente": "idUser",
+      "register_time": "",
+      "priority": "0||1"
+    }
+  ]
+}
